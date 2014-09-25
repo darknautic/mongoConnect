@@ -4,7 +4,7 @@ mongoConnect
 
 
 This project intends to be an simple approach to work  with mongoDB from Java, using a   lightweight and clear classes.
-You will be able to map Domain Objects to Mongo Documents using your POJOs.
+You will be able to map Domain Objects to Mongo Documents ( DBObjects ) using your POJOs.
 
 
 
