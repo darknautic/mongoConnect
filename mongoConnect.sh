@@ -1,7 +1,8 @@
 #! /bin/bash
 
-# This script create basic java files 
 
+# This script create basic java files   
+# darknautic - any comment or update or just to say hi drop a email to blue.darknautic@gmail.com
 
 
 #mongoConnectPath="~/mongoConnect"
@@ -38,6 +39,7 @@ function replace(){
 
 replace $PojoName".java"
 replace $PojoName"Adaptor.java"
+
 replace $PojoName"sHandler.java"
 
 
