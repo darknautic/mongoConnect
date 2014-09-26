@@ -11,6 +11,36 @@ You will be able to map Domain Objects to Mongo Documents ( DBObjects ) using yo
 How To
 -----------
 
+ 1)  Clone this project.
+ 
+    $ cd ~
+    $ git clone https://github.com/darknautic/mongoConnect.git
+
+
+
+ 2)  Create a link
+ 
+    $ sudo ln -s ~/mongoConnect/mongoConnect.sh  /usr/local/bin/mongoConnnect 
+    
+    
+
+ 3)  Go to your project path where you want to create new classes.
+
+    $ cd ~/myProject/model/
+  
+
+ 4)  run command mongoConnect to generate your Car classes
+ 
+    $ mongoConnect Car
+    
+    Car.java
+    CarAdaptor.java
+    CarsHandler.java
+
+
+    
+
+
 
 References and Links
 
