@@ -17,6 +17,9 @@ How To
     $ git clone https://github.com/darknautic/mongoConnect.git
 
 
+TODO - configure paths 
+TODO - copy PersintenDomainObject & DAtabaseto model path
+TODO - download dependncies
 
  2)  Create a link
  

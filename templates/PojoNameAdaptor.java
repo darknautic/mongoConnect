@@ -1,44 +1,50 @@
+/**
+ * converter  DBObject << -- >> FilmObject
+ */
+
 package packagePath;
 
+import org.bson.types.ObjectId;
 import com.mongodb.BasicDBObject;
 import com.mongodb.DBObject;
 
 public class PojoNameAdaptor {
 
+
 	
-	
-	public static final DBObject toDBObject(PojoName pojoObjectName) {
+	public static final DBObject toDBObject(PojoName film) {
 		 
-		 DBObject pojoObjectNameObj = new BasicDBObject();
+		 DBObject filmObj = new BasicDBObject();
 		 
-		 if(pojoObjectName.get_id() != null){
+		 if(film.get_id() != null){
 			 
-			 //DBObject 
-			 pojoObjectNameObj = new BasicDBObject("_id",pojoObjectName.get_id()).append( "name", pojoObjectName.getName());
+			 ObjectId  Id = new ObjectId(film.get_id()); 			 
+			 filmObj = new BasicDBObject("_id",Id).append( "name", film.getName());
 			 
 		 }
 		 else{
-			 //DBObject 
-			 pojoObjectNameObj = new BasicDBObject( "name", pojoObjectName.getName());
+			 
+			 ObjectId newId = new ObjectId();		 
+			 filmObj = new BasicDBObject("_id",newId).append( "name", film.getName());
 		 }
 		 
 		 
 		 
-		 return pojoObjectNameObj;
+		 return filmObj;
 		 
 	 }
 	
 	
 	
-	public static final PojoName toPojoName(DBObject pojoObjectNameDBObject){
+	public static final PojoName tofilm(DBObject filmDBObject){
 		
-		PojoName pojoObjectName =  new PojoName();
+		PojoName film =  new PojoName();
 		
-		pojoObjectName.set_id(pojoObjectNameDBObject.get("_id").toString());
-		pojoObjectName.setName(pojoObjectNameDBObject.get("name").toString());
+		film.set_id(filmDBObject.get("_id").toString());
+		film.setName(filmDBObject.get("name").toString());
 		
 		
-		return pojoObjectName;
+		return film;
 	}
 	 
 	 	 
