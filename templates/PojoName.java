@@ -85,12 +85,12 @@ public class PojoName implements PersistentDomainObject{
 	}
 	
 	
-	public void  clone(PojoName film){
+	public void  clone(PojoName pojoObjectName){
 		/**
 		 *   Clone an Object , add missing sets here 
 		 *   useful to clone objects in runtime , a copy in DB is not created.  */ 
-		this.set_id(film.get_id());
-		this.setName(film.getName());
+		this.set_id(pojoObjectName.get_id());
+		this.setName(pojoObjectName.getName());
 		
  	} 
 	
