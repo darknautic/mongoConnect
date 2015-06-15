@@ -7,9 +7,7 @@
 #  darknautic  >  comments or updates or just to say hi , please drop a email to blue.darknautic@gmail.com
 
 
-mongoConnectPath="~/mongoConnect"
-#mongoConnectPath="/projects/mongoConnect"
-
+mongoConnectPath="/mnt/c/x-Home/projects-z/mongoConnect"
 packagePath="org.codeinmotion.model"
 
 
