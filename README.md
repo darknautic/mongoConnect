@@ -1,5 +1,5 @@
-mongoConnect
-============
+ mongoConnect
+==============
 <b>Java + Mongo Java Driver</b>
 
 
@@ -8,7 +8,7 @@ You will be able to map Domain Objects to Mongo Documents ( DBObjects ) using yo
 
 
 
-How To
+ How To
 -----------
 
  1)  Clone this project.
